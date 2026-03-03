@@ -1,5 +1,13 @@
-const isProd = process.env.NODE_ENV === 'production'
-
-module.exports = {
-    basePath: isProd ? '/ts5-channel-image-generator' : '',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    styledComponents: true,
+  },
+  images: {
+    unoptimized: true,
+  }
 }
+
+module.exports = nextConfig
