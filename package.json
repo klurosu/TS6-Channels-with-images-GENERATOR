@@ -1,10 +1,11 @@
 {
-  "name": "teamspeak5-room-banner-generator",
-  "version": "0.1.0",
+  "name": "ts6-channels-with-images-generator",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
