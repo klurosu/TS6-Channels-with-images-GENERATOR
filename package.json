@@ -11,8 +11,11 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "jszip": "^3.10.1",
+    "file-saver": "^2.0.5",
     "styled-components": "^5.3.6",
-    "@blueprintjs/core": "^3.52.0"
+    "@blueprintjs/core": "^3.52.0",
+    "@blueprintjs/popover2": "^0.13.0",
+    "react-color": "^2.19.3"
   },
   "overrides": {
     "postcss": "^8.4.31"
