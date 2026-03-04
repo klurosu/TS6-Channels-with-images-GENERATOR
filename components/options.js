@@ -93,9 +93,9 @@ const Options = () => {
             <Row>
                 <Col>
                     <FormGroup
-                        label="Channels"
-                        labelInfo={"(Number of output images)"}
-                        helperText="Number of channels you want the banner to be displayed over"
+                        label="Canales"
+                        labelInfo={"(Número de imágenes de salida)"}
+                        helperText="Número de canales en los que desea que se muestre el banner."
                         disabled={disabled}
                     >
                         <Slider
@@ -111,9 +111,9 @@ const Options = () => {
                 </Col>
                 <Col>
                     <FormGroup
-                        label="Ignore channels spacing"
-                        labelInfo={"(Space between channels)"}
-                        helperText="If checked image will be vertically stretch but all parts of it will be visible"
+                        label="Ignorar el espaciado entre canales"
+                        labelInfo={"(Espacio entre canales)"}
+                        helperText="Si se marca, la imagen se estirará verticalmente, pero todas sus partes serán visibles."
                         disabled={disabled}
                     >
                         <Switch
@@ -131,9 +131,9 @@ const Options = () => {
             <Row>
                 <Col>
                     <FormGroup
-                        label="Vertical offset"
-                        labelInfo={"(Moves image up and down)"}
-                        helperText="Chose position of the image. You can get more freedom by setting lower number of channels"
+                        label="Desplazamiento vertical"
+                        labelInfo={"(Mueve la imagen hacia arriba y hacia abajo.)"}
+                        helperText="Elige la posición de la imagen. Puedes obtener más libertad estableciendo un número menor de canales."
                         disabled={disabled || maxVerticalOffset === 0}
                     >
                         <Slider
@@ -150,7 +150,7 @@ const Options = () => {
                 <Col>
                     <FormGroup
                         labelFor={'none'}
-                        label="Horizontal offset"
+                        label="Desplazamiento horizontal"
                         labelInfo={<>
                             (Moves image right and left) <Button
                             icon={'reset'}
@@ -159,7 +159,7 @@ const Options = () => {
                             onClick={() => setOption('xOffset', 0)}
                         >Reset</Button>
                         </>}
-                        helperText="Horizontal offset of the image. Primarily useful for images with transparent background."
+                        helperText="Desplazamiento horizontal de la imagen. Útil principalmente para imágenes con fondo transparente.."
                         disabled={disabled}
                     >
                         <Slider
@@ -179,9 +179,9 @@ const Options = () => {
             <Row>
                 <Col>
                     <FormGroup
-                        label="Fit mode"
-                        labelInfo={"(behavior of image when stretch over nested channels)"}
-                        helperText="If cover mode is used image will be stretch over nested channels. Otherwise it will be aligned to left with fixed width"
+                        label="Modo ajuste"
+                        labelInfo={"(Comportamiento de la imagen al estirarla sobre canales anidados.)"}
+                        helperText="Si se utiliza el modo de cobertura, la imagen se estirará sobre los canales anidados. De lo contrario, se alineará a la izquierda con un ancho fijo."
                         disabled={disabled}
                         labelFor={'none'}
                     >
@@ -215,9 +215,9 @@ const Options = () => {
                 </Col>
                 <Col>
                     <FormGroup
-                        label="Custom background color"
-                        labelInfo={"(only applys to transparent images)"}
-                        helperText="Add your own custom background to transparent images"
+                        label="Color de fondo personalizado"
+                        labelInfo={"(Solo se aplica a imágenes transparentes.)"}
+                        helperText="Añade tu propio fondo personalizado a imágenes transparentes."
                         disabled={disabled}
                     >
                         <ButtonGroup>
