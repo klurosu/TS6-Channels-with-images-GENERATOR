@@ -80,9 +80,9 @@ const Preview = () => {
                 })}
 
             </ScrollWrapper>
-            <ResetCallout icon={'info-sign'} title={'Customize your channels structure'} intent={"primary"}>
-                You can use arrows on the right of the channel preview to make nested channels and toggle between normal
-                room and spacer.
+            <ResetCallout icon={'info-sign'} title={'Personaliza la estructura de tus canales'} intent={"primary"}>
+                Puedes utilizar las flechas situadas a la derecha de la vista previa del canal para crear canales anidados y alternar entre la sala normal
+                y el espaciador..
                 <Button
                     icon={'reset'}
                     outlined
