@@ -32,13 +32,13 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta property={'description'} content={`Tool for generating background cover images for channels in
-                     new TeamSpeak 6 client. Upload any image and it will be split into multiple images that you 
-                     can simply use as banners on your channels.`}/>
+                    <meta property={'description'} content={`Herramienta para generar imágenes de fondo para canales en el
+                     nuevo cliente TeamSpeak 6. Sube cualquier imagen y se dividirá en varias imágenes que 
+                     podrás utilizar fácilmente como banners en tus canales.`}/>
 
-                    <meta property="og:title" content="TeamSpeak 6 Channel Image Generator"/>
-                    <meta property="og:description" content="Tool for generating background cover images for channels in
-                    new TeamSpeak 6 client. Upload any image and it will be split into multiple images that you "/>
+                    <meta property="og:title" content="Generador de imágenes de canales de TeamSpeak 6"/>
+                    <meta property="og:description" content="Herramienta para generar imágenes de fondo para canales en
+                    TeamSpeak 6."/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:image" content="https://i.imgur.com/5YSmahN.png"/>
                 </Head>
