@@ -56,7 +56,7 @@ const Export = () => {
 
         setExportProgress(0.8);
 
-        saveAs(blob, `ts5_channel_banner_${sourceImage.name}.zip`)
+        saveAs(blob, `ts6_channel_banner_${sourceImage.name}.zip`)
 
         setExportProgress(1);
         setExportTimeDelta(Date.now() - start);
@@ -65,8 +65,8 @@ const Export = () => {
     return (
         <Step number={3}>
             <FormGroup
-                label="Generating preview"
-                labelInfo={"(Status of preview you see on the right)"}
+                label="Generando vista previa"
+                labelInfo={"(Estado de la vista previa que ves a la derecha)"}
                 helperText={<>Last preview render time: <b>{previewTimeDeltaStr}</b></>}
                 disabled={disabled}
             >
@@ -78,8 +78,8 @@ const Export = () => {
             </FormGroup>
 
             <FormGroup
-                label="Exporting to ZIP file"
-                labelInfo={"(Status of rendering final images and creating ZIP file)"}
+                label="Exportar a archivo ZIP"
+                labelInfo={"(Estado de la renderización de imágenes finales y la creación del archivo ZIP)"}
                 helperText={<>Last export time: <b>{exportTimeDeltaStr}</b></>}
                 disabled={disabled}
             >
@@ -93,7 +93,7 @@ const Export = () => {
 
 
             <FormGroup
-                label="Image file prefix"
+                label="Prefijo del archivo de imagen"
                 labelInfo={"(optional)"}
                 helperText={<>(File format will be <Code>prefix_%d.png</Code>). Name of all images will be saved to
                     files.txt file for convenience</>}
