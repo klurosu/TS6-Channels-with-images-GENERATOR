@@ -163,9 +163,8 @@ const Upload = () => {
                 await loadCrossOriginImage(loadUrl);
                 toaster.show({
                     intent: "danger",
-                    message: <>It seems that site that you are trying to load images from does not allow images to be
-                        accessed by other sites.
-                        Plese download the image a upload it manually. If you are site administrator you can get <a
+                    message: <>Parece que el sitio desde el que estás intentando cargar imágenes no permite que otras páginas web accedan a ellas.
+                        Descargue la imagen y súbela manualmente. <a
                             href={'https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS'}>more information
                             here</a>.</>,
                     icon: "error"
@@ -173,8 +172,8 @@ const Upload = () => {
             } catch (x) {
                 toaster.show({
                     intent: "danger",
-                    message: <>Unable to load image from URL. Plese check if this is a valid url to image, local address
-                        such as <code>file://</code> or <code>C://</code> will not work.</>,
+                    message: <>No se puede cargar la imagen desde la URL. Comprueba si se trata de una URL válida para la imagen, una dirección local
+                        como <code>file://</code> or <code>C://</code> no funcionará.</>,
                     icon: "error"
                 })
             }
@@ -186,19 +185,19 @@ const Upload = () => {
         <UploadStep number={1}>
             <Col $width={'calc(100% - 350px)'}>
                 <FileSupportCallout intent={"primary"} title={"Supported image formats"}>
-                    Image formats that are supported depends on your browser but in general all modern image formats
-                    should work fine.
-                    Animated banners are not yet supported and they will be converted to static one.
-                    Output images are in resolution <Code>500x22</Code> pixels so optimal size for the input image is
-                    width <Code>500px</Code> and height that can be divided evenly.
+                    Los formatos de imagen compatibles dependen de su navegador, pero en general todos los formatos de imagen modernos
+                    deberían funcionar correctamente.
+                    Los banners animados aún no son compatibles y se convertirán en estáticos.
+                    Las imágenes de salida tienen una resolución de <Code>500x22</Code> píxeles, por lo que el tamaño óptimo para la imagen de entrada es
+                    una anchura de <Code>500px</Code> y una altura que se pueda dividir de forma uniforme1..
                 </FileSupportCallout>
                 <Col $width={'50%'}>
                     <FormGroup
                         label="Image File"
-                        helperText={<>Upload image that you would like to convert into room banners.<br/>Images are not
-                            uploaded to the server and all processing is done in the browser.</>}
+                        helperText={<>Sube la imagen que deseas convertir en banners para habitaciones..<br/>Las imágenes no se
+                            suben al servidor y todo el procesamiento se realiza en el navegador..</>}
                         labelFor="file-input"
-                        labelInfo="(Upload from your computer)"
+                        labelInfo="(Subir desde tu ordenador)"
                     >
                         <FileInput
                             style={{width: 330}}
@@ -216,7 +215,7 @@ const Upload = () => {
                 <Col $width={'50%'}>
                     <FormGroup
                         label="Image URL"
-                        helperText="Load image from public URL"
+                        helperText="Cargar imagen desde URL"
                         labelFor="file-url"
                         labelInfo="(Load from the internet)"
                     >
